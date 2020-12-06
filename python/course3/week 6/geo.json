@@ -1,0 +1,82 @@
+{
+    "results": [
+        {
+            "address_components": [
+                {
+                    "long_name": "7/9",
+                    "short_name": "7/9",
+                    "types": [
+                        "street_number"
+                    ]
+                },
+                {
+                    "long_name": "University Embankment",
+                    "short_name": "University Embankment",
+                    "types": [
+                        "route"
+                    ]
+                },
+                {
+                    "long_name": "Sankt-Peterburg",
+                    "short_name": "\u0421\u041f\u0411",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Vasileostrovskiy",
+                    "short_name": "Vasileostrovskiy",
+                    "types": [
+                        "administrative_area_level_3",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Russia",
+                    "short_name": "RU",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "199034",
+                    "short_name": "199034",
+                    "types": [
+                        "postal_code"
+                    ]
+                }
+            ],
+            "formatted_address": "University Embankment, 7/9, Sankt-Peterburg, Russia, 199034",
+            "geometry": {
+                "location": {
+                    "lat": 59.941894,
+                    "lng": 30.2989199
+                },
+                "location_type": "ROOFTOP",
+                "viewport": {
+                    "northeast": {
+                        "lat": 59.9432429802915,
+                        "lng": 30.3002688802915
+                    },
+                    "southwest": {
+                        "lat": 59.94054501970849,
+                        "lng": 30.2975709197085
+                    }
+                }
+            },
+            "place_id": "ChIJ6aX9PhgxlkYRP0Lp8GrRSqc",
+            "plus_code": {
+                "compound_code": "W7RX+QH Municipal Okrug #7, Saint Petersburg, Russia",
+                "global_code": "9GFGW7RX+QH"
+            },
+            "types": [
+                "establishment",
+                "point_of_interest",
+                "university"
+            ]
+        }
+    ],
+    "status": "OK"
+}

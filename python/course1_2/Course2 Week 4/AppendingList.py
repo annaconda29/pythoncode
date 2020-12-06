@@ -1,0 +1,7 @@
+my_list = list()
+print(my_list)
+my_list.append("Annu")
+my_list.append("Vaishu")
+my_list.append("Amma")
+my_list.append("Daddy")
+print(my_list)
