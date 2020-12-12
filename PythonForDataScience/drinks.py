@@ -8,7 +8,7 @@ db = SQLAlchemy(app)
 class Drink(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=True, nullable=False)
-    description = db.column(db.String(120))
+    description = db.Column(db.String(120))
 
     def __repr__(self):
         return f"{self.name} - {self.description}"
@@ -19,4 +19,9 @@ def index():
 
 @app.route('/drinks')
 def get_drinks():
-    return {"drinks" : "drink_data"}
+    drinks = Drink.query.all()
+    output = []
+    for drink in drinks:
+        data = {'name' : drink.name, 'desc' : drink.description}
+        output.append(data)
+    return {"drinks" : output}
