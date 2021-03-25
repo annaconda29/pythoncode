@@ -1,13 +1,18 @@
-def fibo(n):
-    if n == 1:
-        return 1
-    if n == 2:
-        return 1
-    elif n > 2:
-        return fibo(n-1) + fibo(n-2)
+fibonacci_cache = {}
+def fibonacci_memo(input_value):
+    if input_value in fibonacci_cache:
+        return fibonacci_cache[input_value]
+    if input_value == 1:
+            value = 1
+    elif input_value == 2:
+            value = 1
+    elif input_value > 2:           
+            value =  fibonacci_memo(input_value -1) + fibonacci_memo(input_value -2)
+    fibonacci_cache[input_value] = value
+    
+    return value
+                 
     
 
-
-
-for n in range(1, 21):
-    print(fibo(n))
+for i in range(1, 201):
+     print(i,":",fibonacci_memo(i))
