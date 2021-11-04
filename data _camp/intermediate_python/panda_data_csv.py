@@ -1,1 +1,11 @@
 import pandas as pd
+gwv = pd.read_csv('/Users/annapoorni/Desktop/pythoncode/data _camp/intermediate_python/gwv.csv', index_col = 0)
+print(gwv)
+print("\n")
+print(gwv[['deity', 'weapon']])
+print("\n")
+print(gwv[0:2])
+print("\n")
+print(gwv.loc[2])
+print("\n")
+print(gwv.iloc[1,2])
